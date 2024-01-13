@@ -40,7 +40,7 @@ export default function ContactSection() {
             </ContactLink>
         </div>
 
-        <div className='h-5 bg-gray-300 -mx-10 mt-3'/>
+        <div className='h-5 bg-gray-200 -mx-10 mt-3'/>
 
         <div className='flex flex-col gap-3 font-semibold mt-6'>
             Find me on:
