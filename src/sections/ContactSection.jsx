@@ -1,6 +1,7 @@
 import React from 'react'
 import {MdEmail} from "react-icons/md"
 import { FaGithub, FaLinkedin, FaPhone, FaWhatsapp } from "react-icons/fa6"
+import profileImage  from "../assets/images/user-img.jpg";
 
 const ContactLink =({href, children}) => {
     return (
@@ -18,7 +19,10 @@ const ContactLink =({href, children}) => {
 export default function ContactSection() {
 
   return (
-    <section className='bg-green-700 w-96 text-white flex flex-col px-10 pb-20 justify-end'>
+    <section className='bg-green-700 xl:w-96 text-white pt-10 flex flex-col px-10 pb-20 justify-end'>
+        <div className='overflow-hidden rounded-full w-52 h-52 mb-auto xl:hidden'>
+            <img src={profileImage} alt='' className='object-cover h-full w-full' />
+        </div>
 
         <div className='flex flex-col gap-2 mb-9'>
             <div className='flex gap-1 items-center'>

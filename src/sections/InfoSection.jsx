@@ -5,7 +5,7 @@ export default function InfoSection() {
     const fadeIn = "animate-fade-left animate-duration-[500ms] animate-once animate-ease-out animate-fill-forwards opacity-0";
 
   return (
-    <section className='flex flex-col pl-80 pt-20 flex-1 pr-10 gap-5'>
+    <section className='flex flex-col xl:pl-80 pt-20 flex-1 px-10 gap-5'>
         <h1 className={`flex flex-col gap-1 text-5xl font-semibold uppercase animate-delay-[500ms] ${fadeIn}`}>
             <span className='text-green-700 text-3xl'>Joseph AYUK</span>
             EGBENCHONG II
