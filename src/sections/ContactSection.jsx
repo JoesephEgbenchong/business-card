@@ -19,14 +19,16 @@ const ContactLink =({href, children}) => {
 export default function ContactSection() {
 
   return (
-    <section className='bg-green-700 xl:w-96 text-white pt-10 flex flex-col px-10 pb-20 justify-end'>
-        <div className='overflow-hidden rounded-full w-52 h-52 mb-auto xl:hidden'>
+    <section className='bg-green-700 xl:w-96 text-white pt-10 md:flex md:flex-col px-10 sm:pb-20 pb-10 md:justify-end
+    md:items-stretch grid sm:grid-cols-2  grid-cols-1 sm:items-center md:text-base text-sm justify-items-center sm:justify-start sm:gap-2 gap-4'>
+
+        <div className='overflow-hidden rounded-full md:w-52 md:h-52 sm:w-44 sm:h-44 w-36 h-36 mb-auto xl:hidden'>
             <img src={profileImage} alt='' className='object-cover h-full w-full' />
         </div>
 
-        <div className='flex flex-col gap-2 mb-9'>
-            <div className='flex gap-1 items-center'>
-                <MdEmail className='text-2xl' />
+        <div className='sm:hidden md:block flex flex-col gap-2 md:mb-9 sm:col-start-2 sm:row-start-1 sm:mb-20 sm:items-start items-center'>
+            <div className='flex gap-2 items-center'>
+                <MdEmail className='md:text-2xl text-xl' />
                 <span className='text-lg'>Email</span>
             </div>
             <ContactLink href="mailto:egbenchongjosephayuk@gmail.com" >
@@ -34,9 +36,9 @@ export default function ContactSection() {
             </ContactLink>
         </div>
 
-        <div className='flex flex-col gap-1'>
+        <div className='flex flex-col gap-1 md:mt-6 sm:col-start-2 sm:row-start-1 sm:mt-10 sm:items-start items-center'>
             <div className='flex gap-2 items-center'>
-                <FaWhatsapp className="text-2xl" />
+                <FaWhatsapp className="md:text-2xl text-xl" />
                 <span className='text-lg'>WhatsApp</span>
             </div>
             <ContactLink href="https://wa.me/237670393007" >
@@ -44,11 +46,11 @@ export default function ContactSection() {
             </ContactLink>
         </div>
 
-        <div className='h-5 bg-gray-200 -mx-10 mt-3'/>
+        <div className='h-5 bg-gray-200 -mx-10 mt-3 hidden md:block'/>
 
-        <div className='flex flex-col gap-3 font-semibold mt-6'>
+        <div className='sm:hidden md:flex flex-col gap-3 font-semibold md:mt-6 sm:col-start-2 sm:row-start-1 sm:mt-20 sm:items-start items-center'>
             Find me on:
-            <div className='flex gap-4'>
+            <div className='flex gap-5'>
                 <ContactLink href="https://github.com/JoesephEgbenchong" >
                     <FaGithub className='text-3xl' />
                 </ContactLink>
