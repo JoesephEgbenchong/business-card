@@ -4,7 +4,9 @@ import { FaGithub, FaLinkedin, FaPhone, FaWhatsapp } from "react-icons/fa6"
 
 const ContactLink =({href, children}) => {
     return (
-        <a className='text-gray-300 transition-colors hover:text-white outline-none border focus-visible:border-white border-transparent focus-visible:text-white rounded-md'
+        <a className="text-white/60 w-fit inline-block transition-colors relative rounded-md outline-none 
+        hover:text-white focus-visible:text-white focus-visible:after:opacity-100 focus-visible:after:translate-y-1
+        after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[0.1em] after:bg-white after:opacity-0 after:transition-all after:duration-300"
         target="_blank"
         rel="noreferrer"
         href={href}>
@@ -16,9 +18,10 @@ const ContactLink =({href, children}) => {
 export default function ContactSection() {
 
   return (
-    <section className='bg-green-700 max-w-xs text-white text-sm flex flex-1 flex-col gap-4 px-8 pt-80 pb-12'>
-        <div className='flex flex-col gap-1'>
-            <div className='flex gap-2 items-center'>
+    <section className='bg-green-700 w-96 text-white flex flex-col px-10 pb-20 justify-end'>
+
+        <div className='flex flex-col gap-2 mb-9'>
+            <div className='flex gap-1 items-center'>
                 <MdEmail className='text-2xl' />
                 <span className='text-lg'>Email</span>
             </div>
@@ -37,11 +40,11 @@ export default function ContactSection() {
             </ContactLink>
         </div>
 
-        <hr className='border-8 border-gray-100 -mx-10'/>
+        <div className='h-5 bg-gray-300 -mx-10 mt-3'/>
 
-        <div className='flex flex-col gap-1'>
+        <div className='flex flex-col gap-3 font-semibold mt-6'>
             Find me on:
-            <div className='flex gap-3'>
+            <div className='flex gap-4'>
                 <ContactLink href="https://github.com/JoesephEgbenchong" >
                     <FaGithub className='text-3xl' />
                 </ContactLink>
