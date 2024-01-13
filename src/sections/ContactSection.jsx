@@ -16,7 +16,7 @@ const ContactLink =({href, children}) => {
 export default function ContactSection() {
 
   return (
-    <section className='bg-green-700 max-w-xs text-white text-sm flex flex-col gap-4 px-10 pt-96 pb-16'>
+    <section className='bg-green-700 max-w-xs text-white text-sm flex flex-1 flex-col gap-4 px-8 pt-80 pb-12'>
         <div className='flex flex-col gap-1'>
             <div className='flex gap-2 items-center'>
                 <MdEmail className='text-2xl' />
