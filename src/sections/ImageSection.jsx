@@ -2,26 +2,26 @@ import React from 'react'
 import ProfileImage from "../assets/images/user-img.jpg"
 
 const GraySquare = ({ className }) => {
-    return <div className={`w-12 h-12 bg-gray-200 absolute ${className}`}></div>
+    return <div className={`w-12 h-12 bg-[#9fbfee] absolute ${className}`}></div>
 }
 
 const GrayRectangle = ({ className }) => {
-    return <div className={`w-12  h-5 bg-gray-200 absolute ${className}`}></div>
+    return <div className={`w-12  h-5 bg-[#9fbfee] absolute ${className}`}></div>
 }
 
 const GreenCircle = ({ className, size }) => {
     return (
 
-        <div className={`bg-green-700 absolute rounded-full ${size === "small" ? "h-14 w-14" : "w-36 h-36"} ${className}`}></div>
+        <div className={`bg-[#9fbfee] absolute rounded-full ${size === "small" ? "h-14 w-14" : "w-36 h-36"} ${className}`}></div>
     );
 }
 
 export default function ImageSection() {
   return (
     <>
-        <img className='xl:block hidden absolute object-cover top-8 left-80 w-[340px] h-[550px] z-10'
+        <img className='xl:block hidden absolute object-cover rounded-xl top-8 left-80 w-[340px] h-[550px] z-10'
         src={ProfileImage}
-        alt='Joseph Ayuk EGBENCHONG II'
+        alt='sharp investor posing for a profile pic'
         />
         <GraySquare className="md:block hidden xl:left-[295px] xl:top-[85px]
         left-[220px] top-[120px] z-20 animate-bounce animate-infinite animate-duration-[2000ms] animate-ease-linear" />

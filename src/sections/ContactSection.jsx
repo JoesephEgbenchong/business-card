@@ -19,7 +19,7 @@ const ContactLink =({href, children}) => {
 export default function ContactSection() {
 
   return (
-    <section className='bg-green-700 xl:w-96 text-white pt-10 md:flex md:flex-col px-10 sm:pb-20 pb-10 md:justify-end
+    <section className='bg-[#0f49ae] xl:w-96 text-white pt-10 md:flex md:flex-col px-10 sm:pb-20 pb-10 md:justify-end
     md:items-stretch grid sm:grid-cols-2  grid-cols-1 sm:items-center md:text-base text-sm justify-items-center sm:justify-start sm:gap-2 gap-4'>
 
         <div className='overflow-hidden rounded-full md:w-52 md:h-52 sm:w-44 sm:h-44 w-36 h-36 mb-auto xl:hidden'>
@@ -46,9 +46,9 @@ export default function ContactSection() {
             </ContactLink>
         </div>
 
-        <div className='h-5 bg-gray-200 -mx-10 mt-3 hidden md:block'/>
+        <div className='h-5 bg-white -mx-10 mt-3 hidden md:block'/>
 
-        <div className='sm:hidden md:flex flex-col gap-3 font-semibold md:mt-6 sm:col-start-2 sm:row-start-1 sm:mt-20 sm:items-start items-center'>
+        <div className='sm:hidden md:flex flex-col gap-3 font-semibold sm:col-start-2 sm:row-start-1 sm:mt-20 sm:items-start items-center md:mt-6'>
             Find me on:
             <div className='flex gap-5'>
                 <ContactLink href="https://github.com/JoesephEgbenchong" >
