@@ -5,7 +5,7 @@ import profileImage  from "../assets/images/user-img.jpg";
 
 const ContactLink =({href, children}) => {
     return (
-        <a className="text-white/60 w-fit inline-block transition-colors relative rounded-md outline-none 
+        <a className="text-white/60 text-sm w-fit inline-block transition-colors relative rounded-md outline-none 
         hover:text-white focus-visible:text-white focus-visible:after:opacity-100 focus-visible:after:translate-y-1
         after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[0.1em] after:bg-white after:opacity-0 after:transition-all after:duration-300"
         target="_blank"
